@@ -1,0 +1,45 @@
+.Intro {
+  background-color: var(--secondary-color);
+  width: 60vw;
+  min-height: 90vh;
+}
+
+.Intro .intro-name {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 140px;
+  line-height: 143px;
+  letter-spacing: -4px;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  -webkit-transform: translate(-30%, -50%);
+          transform: translate(-30%, -50%);
+  z-index: 10;
+}
+
+.Intro .intro-name span {
+  text-decoration: underline;
+}
+
+.Intro .intro-image {
+  width: 40vw;
+  height: 85vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.Intro .arrow {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 80%;
+  left: 9%;
+  -webkit-animation: downArrow 2s 1s infinite;
+          animation: downArrow 2s 1s infinite;
+}
+/*# sourceMappingURL=Intro.css.map */
