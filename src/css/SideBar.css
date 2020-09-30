@@ -1,0 +1,106 @@
+.SideBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 80vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10%;
+  margin-right: 5vw;
+}
+
+.SideBar .numbers {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.SideBar .numbers span {
+  color: var(--primary-color);
+}
+
+.SideBar nav {
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.SideBar nav .side-bar-name {
+  font-weight: 500;
+  letter-spacing: 4px;
+  position: relative;
+  cursor: default;
+  -webkit-transition: color .5s ease-in-out;
+  transition: color .5s ease-in-out;
+}
+
+.SideBar nav .side-bar-name:hover {
+  color: var(--primary-color);
+}
+
+.SideBar nav .side-bar-name:hover::after {
+  background-color: var(--primary-color);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.SideBar nav .side-bar-name::after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: var(--text-color);
+  -webkit-transform-origin: right center;
+          transform-origin: right center;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.SideBar nav .links li {
+  margin-top: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.SideBar nav .links li:hover {
+  color: var(--primary-color);
+}
+
+.SideBar nav .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.SideBar nav .social li {
+  font-size: 14px;
+  color: #212121;
+  letter-spacing: 4px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.SideBar nav .social li:hover {
+  color: var(--primary-color);
+}
+/*# sourceMappingURL=SideBar.css.map */
