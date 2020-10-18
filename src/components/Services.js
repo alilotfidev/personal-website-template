@@ -9,13 +9,13 @@ import promoteService from '../images/ser4.png';
 
 const Services = () => {
   return (
-    <div className="Services">
-      <h2 className="services-title">Services</h2>
-      <h4 className="services-subtitle">
+    <div className="Services section-wrapper">
+      <h2 className="services-title title">Services</h2>
+      <h4 className="services-subtitle subtitle">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         <br /> Nam fringilla pellentesque.
       </h4>
-      <div className="services-details">
+      <div className="services-details details">
         <p className="services-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla
           pellentesque ex, vitae maximus sapien molestie id. Fusce molestie

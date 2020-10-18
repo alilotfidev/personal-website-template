@@ -1,0 +1,112 @@
+.AboutMe {
+  margin-top: 15vh;
+}
+
+.AboutMe .about-me-text-wrapper > * {
+  margin: 16px 0px;
+}
+
+.AboutMe .about-me-title {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.AboutMe .about-me-subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  width: 50%;
+}
+
+.AboutMe .about-me-details {
+  font-size: 15px;
+  width: 80%;
+  line-height: 26px;
+}
+
+.AboutMe .about-me-horizontal-image {
+  width: 65vw;
+  height: 50vh;
+  margin-top: 4vh;
+}
+
+.AboutMe .about-me-more-details {
+  font-size: 15px;
+  margin-top: 4vh;
+}
+
+.AboutMe .about-me-more-details p {
+  line-height: 2em;
+}
+
+.AboutMe .about-me-more-details .more-details-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.AboutMe .about-me-more-details .first-paragraph {
+  width: 50%;
+}
+
+.AboutMe .about-me-more-details .job-details {
+  width: 300px;
+  height: 300px;
+  background-color: var(--primary-color);
+  padding: 50px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  bottom: 15vh;
+  right: 5vw;
+}
+
+.AboutMe .about-me-more-details .job-details .email,
+.AboutMe .about-me-more-details .job-details .role,
+.AboutMe .about-me-more-details .job-details .phone {
+  margin-top: 4vh;
+}
+
+.AboutMe .about-me-more-details .job-details .job-details-title {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 14px;
+  margin-bottom: 1vh;
+}
+
+.AboutMe .about-me-more-details .job-details li.job-details-content.link {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.AboutMe .about-me-more-details .job-details li.job-details-content.link:hover {
+  color: var(--text-color);
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+.AboutMe .about-me-more-details .more-details-bottom {
+  width: 85%;
+}
+
+.AboutMe .about-me-more-details .more-details-bottom p {
+  margin: 10px 0;
+}
+
+.AboutMe .about-me-more-details .more-details-bottom .signature {
+  margin-top: 2vh;
+}
+/*# sourceMappingURL=AboutMe.css.map */

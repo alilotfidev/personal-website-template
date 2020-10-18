@@ -1,7 +1,4 @@
 .Services {
-  position: relative;
-  left: 15%;
-  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,7 +8,7 @@
           flex-flow: column;
 }
 
-.Services .services-title {
+.Services .title {
   font-size: 26px;
   font-weight: 500;
   line-height: 26px;
@@ -20,12 +17,12 @@
   text-transform: uppercase;
 }
 
-.Services .services-subtitle {
+.Services .subtitle {
   font-size: 20px;
   font-weight: 400;
 }
 
-.Services .services-details {
+.Services .details {
   margin-top: 24px;
   min-height: 20vh;
   display: -webkit-box;
@@ -40,7 +37,7 @@
           justify-content: space-between;
 }
 
-.Services .services-details .services-text {
+.Services .details .services-text {
   width: 50vw;
   font-size: 15px;
   letter-spacing: 1.5px;
@@ -121,6 +118,11 @@
           justify-content: space-evenly;
 }
 
+.Services .services-grid .service:hover .service-title {
+  -webkit-transform: translateX(-15px);
+          transform: translateX(-15px);
+}
+
 .Services .services-grid .service img {
   width: 100px;
   height: 70px;
@@ -130,6 +132,10 @@
   font-weight: 600;
   font-size: 20px;
   letter-spacing: 4px;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
 .Services .services-grid .service .service-details {

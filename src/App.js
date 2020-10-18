@@ -5,6 +5,7 @@ import './css/keyframes.css';
 import Intro from './components/Intro';
 import SideBar from './components/SideBar';
 import Services from './components/Services';
+import AboutMe from './components/AboutMe';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <div id="content">
         <Intro />
         <Services />
+        <AboutMe />
       </div>
       <div id="side-bar">
         <SideBar />

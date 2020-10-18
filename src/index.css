@@ -31,3 +31,9 @@ a{
 #content{
   background-color: var(--secondary-color);
 }
+.section-wrapper{
+  position: relative;
+  left: 15%;
+  min-height: 100vh;
+  max-width: 60vw;
+}
