@@ -6,6 +6,9 @@ import Intro from './components/Intro';
 import SideBar from './components/SideBar';
 import Services from './components/Services';
 import AboutMe from './components/AboutMe';
+import Portfolio from './components/Portfolio';
+import Blog from './components/Blog';
+import Skills from './components/Skills';
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
         <Intro />
         <Services />
         <AboutMe />
+        <Portfolio />
+        <Blog />
+        <Skills />
       </div>
       <div id="side-bar">
         <SideBar />

@@ -1,0 +1,117 @@
+.Blog .blog-title {
+  margin-top: 4vh;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.Blog .blog-subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  width: 50%;
+  margin-top: 4vh;
+}
+
+.Blog .blog-posts {
+  width: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10vh;
+}
+
+.Blog .blog-posts .post {
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.Blog .blog-posts .post::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+}
+
+.Blog .blog-posts .post-title {
+  font-size: 24px;
+  font-weight: 600;
+  width: 60%;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.Blog .blog-posts .post-title:hover {
+  color: var(--primary-color);
+}
+
+.Blog .blog-posts .post-date, .Blog .blog-posts #post-category-link {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.Blog .blog-posts #post-category-link {
+  color: var(--primary-color);
+}
+
+.Blog .read-more {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+  right: 10vw;
+}
+
+.Blog .read-more > a {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 4vh;
+}
+
+.Blog .read-more > a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-color);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.Blog .read-more > a:hover {
+  color: var(--primary-color);
+}
+
+.Blog .read-more > a:hover::after {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+/*# sourceMappingURL=Blog.css.map */

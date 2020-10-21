@@ -30,6 +30,7 @@ a{
 
 #content{
   background-color: var(--secondary-color);
+  width: 65vw;
 }
 .section-wrapper{
   position: relative;

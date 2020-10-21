@@ -1,0 +1,115 @@
+.Skills {
+  .skills-title {
+    margin-top: 10vh;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 500;
+    font-size: 30px;
+  }
+  .skills-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    width: 50%;
+    margin-top: 4vh;
+  }
+  .details {
+    margin-top: 4vh;
+    width: 45vw;
+    font-size: 14px;
+  }
+  .experience-wrapper {
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      transform: translate(-40%, -50%);
+      width: 3px;
+      height: 90%;
+      background-color: white;
+    }
+    .experience-section {
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 26px;
+      .year {
+        font-size: 60px;
+        font-weight: 200;
+        transition: all 0.5s ease-in-out;
+        margin-left: 10vh;
+      }
+      .experience-details {
+        width: 50%;
+        font-weight: 400;
+        transition: transform 0.5s ease-in-out;
+        span {
+          font-weight: 600;
+        }
+      }
+      &:hover {
+        .year {
+          color: var(--text-color);
+          transform: translateX(40px);
+        }
+        .experience-details {
+          transform: translateX(-40px);
+        }
+      }
+    }
+  }
+  .Skills-wrapper {
+    margin-top: 6vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50vw;
+    .skill {
+      margin: 16px;
+      width: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h6 {
+        font-size: 12px;
+        letter-spacing: 3px;
+        font-weight: 500;
+      }
+      .slider {
+        width: 200px;
+        height: 10px;
+        background-color: rgba(244, 70, 71, 0.4);
+        .slider-value {
+          background-color: var(--primary-color);
+          width: 78%;
+          height: 100%;
+          transition: width 0.3s ease-in-out;
+        }
+        .design {
+          width: 50%;
+        }
+        .seo {
+          width: 60%;
+        }
+        .responsive {
+          width: 90%;
+        }
+        .web-dev {
+          width: 80%;
+        }
+        .marketing {
+          width: 75%;
+        }
+        .data-management {
+          width: 65%;
+        }
+      }
+    }
+  }
+}

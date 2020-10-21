@@ -1,0 +1,162 @@
+.Skills .skills-title {
+  margin-top: 10vh;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.Skills .skills-subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  width: 50%;
+  margin-top: 4vh;
+}
+
+.Skills .details {
+  margin-top: 4vh;
+  width: 45vw;
+  font-size: 14px;
+}
+
+.Skills .experience-wrapper {
+  margin-top: 4vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--primary-color);
+  position: relative;
+}
+
+.Skills .experience-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  -webkit-transform: translate(-40%, -50%);
+          transform: translate(-40%, -50%);
+  width: 3px;
+  height: 90%;
+  background-color: white;
+}
+
+.Skills .experience-wrapper .experience-section {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 26px;
+}
+
+.Skills .experience-wrapper .experience-section .year {
+  font-size: 60px;
+  font-weight: 200;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  margin-left: 10vh;
+}
+
+.Skills .experience-wrapper .experience-section .experience-details {
+  width: 50%;
+  font-weight: 400;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.Skills .experience-wrapper .experience-section .experience-details span {
+  font-weight: 600;
+}
+
+.Skills .experience-wrapper .experience-section:hover .year {
+  color: var(--text-color);
+  -webkit-transform: translateX(40px);
+          transform: translateX(40px);
+}
+
+.Skills .experience-wrapper .experience-section:hover .experience-details {
+  -webkit-transform: translateX(-40px);
+          transform: translateX(-40px);
+}
+
+.Skills .Skills-wrapper {
+  margin-top: 6vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  width: 50vw;
+}
+
+.Skills .Skills-wrapper .skill {
+  margin: 16px;
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Skills .Skills-wrapper .skill h6 {
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+.Skills .Skills-wrapper .skill .slider {
+  width: 200px;
+  height: 10px;
+  background-color: rgba(244, 70, 71, 0.4);
+}
+
+.Skills .Skills-wrapper .skill .slider .slider-value {
+  background-color: var(--primary-color);
+  width: 78%;
+  height: 100%;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+.Skills .Skills-wrapper .skill .slider .design {
+  width: 50%;
+}
+
+.Skills .Skills-wrapper .skill .slider .seo {
+  width: 60%;
+}
+
+.Skills .Skills-wrapper .skill .slider .responsive {
+  width: 90%;
+}
+
+.Skills .Skills-wrapper .skill .slider .web-dev {
+  width: 80%;
+}
+
+.Skills .Skills-wrapper .skill .slider .marketing {
+  width: 75%;
+}
+
+.Skills .Skills-wrapper .skill .slider .data-management {
+  width: 65%;
+}
+/*# sourceMappingURL=Skills.css.map */
