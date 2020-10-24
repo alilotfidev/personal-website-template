@@ -1,40 +1,56 @@
-:root{
+:root {
   --text-color: #000000;
   --primary-color: #f44647;
   --secondary-color: #fff0f0;
 }
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--text-color);
   overflow-x: hidden;
 }
-li{
+li {
   list-style-type: none;
 }
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
-.App{
+textarea, input, button{
+  font-family: "Poppins", sans-serif;
+}
+.App {
   display: flex;
   justify-content: space-between;
 }
 
-#content{
+#content {
   background-color: var(--secondary-color);
   width: 65vw;
 }
-.section-wrapper{
+.section-wrapper {
   position: relative;
   left: 15%;
   min-height: 100vh;
   max-width: 60vw;
+}
+.subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  width: 50%;
+  margin-top: 4vh;
+}
+.title {
+  margin-top: 4vh;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 500;
+  font-size: 30px;
 }

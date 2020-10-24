@@ -40,5 +40,7 @@
   left: 9%;
   -webkit-animation: downArrow 2s 1s infinite;
           animation: downArrow 2s 1s infinite;
+  cursor: pointer;
+  z-index: 10;
 }
 /*# sourceMappingURL=Intro.css.map */

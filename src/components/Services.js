@@ -30,7 +30,7 @@ const Services = () => {
           eget. Nam id leo risus.
         </p>
       </div>
-      <div className="services-links">
+      <div className="services-links" data-aos="fade-right">
         <a href="#" className="services-link">
           Download CV
         </a>

@@ -43,8 +43,8 @@
   letter-spacing: 4px;
   position: relative;
   cursor: default;
-  -webkit-transition: color .5s ease-in-out;
-  transition: color .5s ease-in-out;
+  -webkit-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
 }
 
 .SideBar nav .side-bar-name:hover {
@@ -58,7 +58,7 @@
 }
 
 .SideBar nav .side-bar-name::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 3px;
   position: absolute;
@@ -67,20 +67,28 @@
   background-color: var(--text-color);
   -webkit-transform-origin: right center;
           transform-origin: right center;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .SideBar nav .links li {
   margin-top: 10px;
   font-size: 16px;
   cursor: pointer;
-  -webkit-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  transition: color 0.3s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  transition: color 0.3s ease-in-out, transform 0.5s ease-in-out;
+  transition: color 0.3s ease-in-out, transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
 .SideBar nav .links li:hover {
   color: var(--primary-color);
+}
+
+.SideBar nav .links li.active-nav-item {
+  color: var(--primary-color);
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
 }
 
 .SideBar nav .social {

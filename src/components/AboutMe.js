@@ -23,6 +23,7 @@ const AboutMe = () => {
         src={AnnaEdmunds2}
         alt="anna edmunds"
         className="about-me-horizontal-image"
+        data-aos="fade-right"
       />
       <div className="about-me-more-details">
         <div className="more-details-top">
@@ -36,7 +37,7 @@ const AboutMe = () => {
             lobortis urna aliquam setera fermentum sit iaculis vitae hendrerit
             et. Arcu ac est dictum lorem ispum dolor sit amet nunc usrus seio.
           </p>
-          <div className="job-details">
+          <div className="job-details" data-aos="fade-in">
             <ul className="email">
               <li className="job-details-title">Email:</li>
               <li className="job-details-content link">

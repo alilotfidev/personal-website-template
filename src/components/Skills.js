@@ -15,7 +15,7 @@ const Skills = () => {
         amet settera aces volutpat in voltare lupar est phasellus. Faucibus sed
         tristique fames sed aliquet ultricies eget viverra arcu.
       </p>
-      <div className="experience-wrapper">
+      <div className="experience-wrapper" data-aos="fade-right">
         <div className="experience-section">
           <div className="year">2016</div>
           <div className="experience-details">

@@ -1,0 +1,96 @@
+.Contact .contact-info-wrapper {
+  margin-top: 4vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.Contact .contact-info-wrapper .contact-info {
+  font-weight: 400;
+  font-size: 15px;
+  margin: 4px 0;
+}
+
+.Contact .contact-info-wrapper .contact-info span {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.Contact .contact-form {
+  margin-top: 4vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 45vw;
+}
+
+.Contact .contact-form input,
+.Contact .contact-form textarea,
+.Contact .contact-form button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin: 2vh 0;
+  border-bottom: 2px solid var(--text-color);
+  padding: 8px 0;
+}
+
+.Contact .contact-form input::-webkit-input-placeholder,
+.Contact .contact-form textarea::-webkit-input-placeholder,
+.Contact .contact-form button::-webkit-input-placeholder {
+  color: var(--text-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.Contact .contact-form input:-ms-input-placeholder,
+.Contact .contact-form textarea:-ms-input-placeholder,
+.Contact .contact-form button:-ms-input-placeholder {
+  color: var(--text-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.Contact .contact-form input::-ms-input-placeholder,
+.Contact .contact-form textarea::-ms-input-placeholder,
+.Contact .contact-form button::-ms-input-placeholder {
+  color: var(--text-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.Contact .contact-form input::placeholder,
+.Contact .contact-form textarea::placeholder,
+.Contact .contact-form button::placeholder {
+  color: var(--text-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.Contact .contact-form textarea {
+  height: 150px;
+}
+
+.Contact .contact-form button {
+  border: 2px solid var(--text-color);
+  padding: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 10vh;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.Contact .contact-form button:hover {
+  color: var(--primary-color);
+}
+/*# sourceMappingURL=Contact.css.map */
