@@ -4,7 +4,7 @@ import CursorProvider from "@/components/ui/CursorProvider";
 
 export default function Home() {
   return (
-    <main className="bg-bg-color">
+    <main className="bg-black-color">
       <CursorProvider>
         <Nav />
         <HeroImage />
