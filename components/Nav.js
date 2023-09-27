@@ -4,11 +4,7 @@ import { useState } from "react";
 export default function Nav() {
   const [showMenu, setShowMenu] = useState(false);
   return (
-    <nav
-      className={`sticky top-0 z-30 bg-black px-10 py-5 text-white ${
-        !showMenu && "mix-blend-difference"
-      }`}
-    >
+    <nav className={`bg-bg-color sticky top-0 z-30 px-10 py-5 text-white `}>
       <ul className="flex items-center justify-between">
         <li className="nav-logo text-xl font-medium">
           CALLUM __
@@ -31,8 +27,8 @@ export default function Nav() {
 
       {/* menu */}
       <section
-        className={`side-menu absolute left-0 top-0 z-10 flex h-screen w-screen flex-col items-center justify-center bg-black px-10 py-8 text-6xl font-bold transition-all duration-300 ${
-          !showMenu ? "-top-[100vh]" : ""
+        className={`side-menu bg-bg-color absolute z-10 flex h-screen w-screen flex-col items-center justify-center overflow-x-hidden px-10 py-8 text-6xl font-bold transition-all duration-300 ${
+          !showMenu ? "-top-[100vh]" : "left-0 top-0"
         }`}
       >
         <a
