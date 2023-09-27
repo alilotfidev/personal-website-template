@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* burgur menu icon styles */
+.burgur-menu-icon {
+  position: relative;
+  width: 2em;
+  height: 2px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.burgur-menu-icon::after {
+  top: -0.5em;
+}
+.burgur-menu-icon::before {
+  top: 0.5em;
+}
+/* for when menu is going to be shown */
+.burgur-menu-icon.open-menu {
+  background-color: transparent;
+}
+.burgur-menu-icon.open-menu::after,
+.burgur-menu-icon.open-menu::before {
+  top: 0;
+}
+.burgur-menu-icon.open-menu::after {
+  transform: rotate(45deg);
+}
+.burgur-menu-icon.open-menu::before {
+  transform: rotate(-45deg);
+}
+
+.burgur-menu-icon::after,
+.burgur-menu-icon::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 2em;
+  height: 2px;
+  transition: all 0.3s ease-in-out;
+}
