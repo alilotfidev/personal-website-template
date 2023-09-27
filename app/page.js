@@ -1,3 +1,9 @@
+import CursorProvider from "@/components/ui/CursorProvider";
+
 export default function Home() {
-  return <main></main>;
+  return (
+    <main>
+      <CursorProvider></CursorProvider>
+    </main>
+  );
 }
