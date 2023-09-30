@@ -6,7 +6,7 @@ export default function Nav() {
   return (
     <nav className={`sticky top-0 z-30 bg-black-color px-10 py-5 text-white`}>
       <ul className="flex items-center justify-between">
-        <li className="nav-logo text-xl font-medium">
+        <li className="nav-logo font-medium sm:text-xl">
           CALLUM __
           <br />
           GLOVER
@@ -27,7 +27,7 @@ export default function Nav() {
 
       {/* menu */}
       <section
-        className={`side-menu z-10 flex h-screen w-screen flex-col items-center justify-center overflow-x-hidden bg-black-color px-10 py-8 text-6xl font-bold transition-all duration-300 ${
+        className={`side-menu z-10 flex h-screen w-screen flex-col items-center justify-center overflow-x-hidden bg-black-color px-10 py-8 text-2xl font-bold transition-all duration-300 sm:text-4xl md:text-6xl ${
           !showMenu ? "-top-[100vh]" : "left-0 top-0"
         } ${showMenu ? "fixed top-0" : "absolute"}`}
       >
