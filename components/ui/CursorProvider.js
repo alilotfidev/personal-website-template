@@ -11,7 +11,7 @@ export default function CursorProvider({ children }) {
   };
   return (
     <div
-      className="relative cursor-none overflow-x-hidden"
+      className="relative cursor-none overflow-hidden"
       onMouseMove={(e) => handleCustomCursor(e)}
     >
       {children}
