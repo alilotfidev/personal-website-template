@@ -1,5 +1,6 @@
 import HeroImage from "@/components/HeroImage";
 import Nav from "@/components/Nav";
+import TextInformation from "@/components/TextInformation";
 import CursorProvider from "@/components/ui/CursorProvider";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <CursorProvider>
         <Nav />
         <HeroImage />
+        <TextInformation />
       </CursorProvider>
     </main>
   );
