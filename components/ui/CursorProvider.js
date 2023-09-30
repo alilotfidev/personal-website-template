@@ -1,18 +1,29 @@
 "use client";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 export default function CursorProvider({ children }) {
+  // disabling custom cursor on mobile
+  const parentRef = useRef(null);
+  const [isDesktop, setIsDesktop] = useState(false);
+  useEffect(() => {
+    if (window.innerWidth >= 1024) {
+      setIsDesktop(true);
+    }
+  }, []);
+
+  // custom cursor code
   const [cursorX, setCursorX] = useState(0);
   const [cursorY, setCursorY] = useState(0);
-
   const handleCustomCursor = (e) => {
     setCursorX(e.pageX);
     setCursorY(e.pageY);
   };
-  return (
+
+  return isDesktop ? (
     <div
       className="relative cursor-none overflow-hidden"
       onMouseMove={(e) => handleCustomCursor(e)}
+      ref={parentRef}
     >
       {children}
       <div
@@ -20,5 +31,7 @@ export default function CursorProvider({ children }) {
         style={{ top: cursorY, left: cursorX }}
       ></div>
     </div>
+  ) : (
+    <div className="overflow-x-hidden">{children}</div> // if it's not a desktop device just return children
   );
 }
