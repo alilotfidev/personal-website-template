@@ -1,3 +1,4 @@
+import ContactMe from "@/components/ContactMe";
 import HeroImage from "@/components/HeroImage";
 import LatestWorks from "@/components/LatestWorks";
 import Nav from "@/components/Nav";
@@ -12,6 +13,7 @@ export default function Home() {
         <HeroImage />
         <TextInformation />
         <LatestWorks />
+        <ContactMe />
       </CursorProvider>
     </main>
   );
