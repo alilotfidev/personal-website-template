@@ -44,8 +44,3 @@
   height: 2px;
   transition: all 0.3s ease-in-out;
 }
-
-/* bg image */
-.hero-background-image {
-  background-image: url("/background.jpg");
-}
