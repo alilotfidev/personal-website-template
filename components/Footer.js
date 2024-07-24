@@ -21,7 +21,7 @@ export default function Footer() {
         </Link>
       </div>
       <div className="copyright mt-20 text-xs tracking-widest opacity-60">
-        © Callum Glover . All rights reserved.
+        © Katrin Schroder . All rights reserved.
       </div>
     </footer>
   );

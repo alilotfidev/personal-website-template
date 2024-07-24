@@ -6,10 +6,10 @@ export default function Nav() {
   return (
     <nav className={`sticky top-0 z-30 bg-black-color px-10 py-5 text-white`}>
       <ul className="flex items-center justify-between">
-        <li className="nav-logo font-medium sm:text-xl">
-          CALLUM __
+        <li className="nav-logo font-medium uppercase sm:text-xl">
+          Katrin __
           <br />
-          GLOVER
+          Schroder
         </li>
         <div
           className={`menu-button z-20 p-4 ${
