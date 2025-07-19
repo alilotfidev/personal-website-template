@@ -16,6 +16,7 @@ export default function HeroImage() {
         width={500}
         height={800}
         className="md:self-end"
+        placeholder="blur"
       />
     </section>
   );
